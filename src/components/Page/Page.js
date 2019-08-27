@@ -49,9 +49,9 @@ class PageComponent extends Component {
     document.removeEventListener('drop', preventDefault);
   }
 
-  componentWillReceiveProps(nextProps) {
-    const scrollingDisabled = nextProps.scrollingDisabled;
-    const scrollingDisabledHasChanged = scrollingDisabled !== this.props.scrollingDisabled;
+  componentDidUpdate(prevProps) {
+    const scrollingDisabled = this.props.scrollingDisabled;
+    const scrollingDisabledHasChanged = scrollingDisabled !== prevProps.scrollingDisabled;
 
     if (scrollingDisabled && scrollingDisabledHasChanged) {
       // Update current scroll position, if scrolling is disabled (e.g. modal is open)
