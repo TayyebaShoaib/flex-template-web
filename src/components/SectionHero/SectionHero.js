@@ -1,8 +1,6 @@
 import React from 'react';
 import { string } from 'prop-types';
-import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
-import { NamedLink } from '../../components';
 
 import css from './SectionHero.css';
 
@@ -14,22 +12,12 @@ const SectionHero = props => {
   return (
     <div className={classes}>
       <div className={css.heroContent}>
-        <h1 className={css.heroMainTitle}>
-          <FormattedMessage id="SectionHero.title" />
-        </h1>
-        <h2 className={css.heroSubTitle}>
-          <FormattedMessage id="SectionHero.subTitle" />
-        </h2>
-        <NamedLink
-          name="SearchPage"
-          to={{
-            search:
-              'address=Finland&bounds=70.0922932%2C31.5870999%2C59.693623%2C20.456500199999937',
-          }}
-          className={css.heroButton}
-        >
-          <FormattedMessage id="SectionHero.browseButton" />
-        </NamedLink>
+        <img src={require('../../assets/octopus.png')} alt="octopus logo" />
+        <p>
+          A place for you to buy, sell, swap or give baby/kids stuff. Born from the constant need to
+          update our baby’s things to be age appropriate, the preference for a clutter-free home
+          and, of course, the environment.
+        </p>
       </div>
     </div>
   );

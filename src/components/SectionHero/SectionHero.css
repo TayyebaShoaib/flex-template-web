@@ -40,7 +40,7 @@
 }
 
 .root {
-  @apply --backgroundImage;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -51,7 +51,7 @@
 
 .heroContent {
   margin: 0 24px 0 24px;
-
+  text-align: center;
   @media (--viewportMedium) {
     margin: 0 7.5vw 0 7.5vw;
   }
@@ -67,6 +67,15 @@
     max-width: calc(1052px + 36px + 36px);
     width: 100%;
     padding: 0 36px 0 36px;
+  }
+}
+
+.heroContent p {
+  max-width: 700px;
+  margin: 2em auto 0;
+
+  @media (min-width: 768px) {
+    font-size: 22px;
   }
 }
 
