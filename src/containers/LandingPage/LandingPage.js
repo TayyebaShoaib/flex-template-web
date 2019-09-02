@@ -9,6 +9,7 @@ import config from '../../config';
 import {
   Page,
   SectionHero,
+  SectionRecentlyListed,
   SectionHowItWorks,
   SectionLocations,
   LayoutSingleColumn,
@@ -61,6 +62,7 @@ export const LandingPageComponent = props => {
           <div className={css.heroContainer}>
             <SectionHero className={css.hero} history={history} location={location} />
           </div>
+          <SectionRecentlyListed />
           <ul className={css.sections}>
             <li className={css.section}>
               <div className={css.sectionContentFirstChild}>
