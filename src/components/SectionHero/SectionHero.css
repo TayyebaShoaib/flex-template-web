@@ -73,10 +73,15 @@
 .heroContent p {
   max-width: 700px;
   margin: 2em auto 0;
+  color: #000;
 
   @media (min-width: 768px) {
     font-size: 22px;
   }
+}
+
+.heroContent img {
+  max-height: 300px;
 }
 
 .heroMainTitle {
