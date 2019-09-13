@@ -31,14 +31,25 @@
       *
       */
 
-      @font-face {
-        /* 'SofiaPro-Regular' */
+      /* 'SofiaPro-Regular' */
+      /* @font-face {
         font-family: 'sofiapro';
         src: url('https://assets-sharetribecom.sharetribe.com/webfonts/sofiapro/sofiapro-regular-webfont.woff2') format('woff2'),
              url('https://assets-sharetribecom.sharetribe.com/webfonts/sofiapro/sofiapro-regular-webfont.woff') format('woff');
+        font-weight: 400; 
+        font-style: normal;
+      } */
+      
+      @font-face {
+        /* 'Gordita-Regular' */
+        font-family: 'Gordita';
+        src: url('./static/fonts/Gordita.woff2') format('woff2'),
+             url('./static/fonts/Gordita.woff') format('woff');
         font-weight: 400; /* Regular */
         font-style: normal;
       }
+
+
 
       @font-face {
           font-family: 'sofiapro';
@@ -118,7 +129,7 @@
 
 
         // Fonts we use (Check font-face rules from <style> tag in <head> section)
-        var sofiaproRegular = new FontFaceObserver('sofiapro', { weight: 400 });
+        var sofiaproRegular = new FontFaceObserver('Gordita', { weight: 400 });
         var sofiaproMedium = new FontFaceObserver('sofiapro', { weight: 500 });
         var sofiaproSemibold = new FontFaceObserver('sofiapro', { weight: 600 });
         var sofiaproBold = new FontFaceObserver('sofiapro', { weight: 700 });
