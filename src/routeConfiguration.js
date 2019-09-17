@@ -119,6 +119,17 @@ const routeConfiguration = () => {
       ),
     },
     {
+      path: '/buy',
+      name: 'BrowseListingsPage',
+      auth: false,
+      component: () => (
+        <NamedRedirect
+          name="EditListingPage"
+          params={{ slug: draftSlug, id: draftId, type: 'new', tab: 'description' }}
+        />
+      ),
+    },
+    {
       path: '/l/:slug/:id/:type/:tab',
       name: 'EditListingPage',
       auth: true,

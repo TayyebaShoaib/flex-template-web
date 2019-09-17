@@ -29,7 +29,7 @@
     transition: var(--transitionStyleButton);
 
     &:hover {
-      border-bottom: 4px solid var(--marketplaceColor);
+      border-bottom: 4px solid #dead2c;
       border-radius: 0;
       text-decoration: none;
     }
@@ -114,19 +114,20 @@
 }
 
 /* Create listing (CTA for providers) */
-.createListingLink {
+.createListingLink,
+.browseListingsPage {
   @apply --TopbarDesktop_linkHover;
   @apply --marketplaceH4FontStyles;
 
   flex-shrink: 0;
   height: 100%;
   padding: 0 12px 0 12px;
-  color: var(--marketplaceColor);
+  color: #000000;
   margin-top: 0;
   margin-bottom: 0;
 
   &:hover {
-    color: var(--marketplaceColorDark);
+    color: #dead2c;
   }
 
   @media (--viewportMedium) {
@@ -135,7 +136,8 @@
   }
 }
 
-.createListing {
+.createListing,
+.browseListings {
   @apply --TopbarDesktop_label;
 }
 
@@ -147,10 +149,10 @@
   padding: 0 12px 0 12px;
   margin-top: 0;
   margin-bottom: 0;
-  color: var(--matterColor);
+  color: #000000;
 
   &:hover {
-    color: var(--matterColorDark);
+    color: #dead2c;
   }
 
   @media (--viewportMedium) {
